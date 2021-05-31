@@ -1,0 +1,26 @@
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+</head>
+
+<body>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+		<script>
+var data = [{
+  values: [19, 177, 8, 34],
+  labels: ['MT-CNC', 'Direct Distributor', 'MT-Retail','Pharma Stockist'],
+  type: 'pie'
+}];
+
+var layout = {
+  title: 'Distributor Wise shipment for Strepsils',
+  height: 400,
+  width: 500
+};
+
+Plotly.newPlot('myDiv', data, layout);
+
+
+</script>
+</body>
